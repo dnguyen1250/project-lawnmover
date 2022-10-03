@@ -1,7 +1,7 @@
 # project-lawnmover
 CPSC 335 Project 1
 
-Daniel Nguyen
+Daniel Nguyen dnguyen1250@csu.fullerton.edu
 
 Sara Wu wusara87@csu.fullerton.edu
 
