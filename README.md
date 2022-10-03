@@ -2,6 +2,7 @@
 CPSC 335 Project 1
 
 Daniel Nguyen
+
 Sara Wu wusara87@csu.fullerton.edu
 
 Project 1 Report
