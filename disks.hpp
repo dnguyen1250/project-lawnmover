@@ -174,7 +174,6 @@ sorted_disks sort_alternate(const disk_state& before) {
           numOfSwap++;
         }
         j++;
-        _after.is_sorted();    //implement the is_sorted() function above
       }
     }
 
