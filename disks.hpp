@@ -158,7 +158,7 @@ public:
 
 // Algorithm that sorts disks using the alternate algorithm.
 sorted_disks sort_alternate(const disk_state& before) {
-	int numOfSwap = 0;                                                                      //record # of step swap
+  int numOfSwap = 0;                                                                      //record # of step swap
   disk_state state = before;
   for (size_t k = 0; k < state.total_count() - 1; k++) {
     if (k % 2 == 0) {     //even number of runs (second left-most & second right-most)
@@ -186,7 +186,7 @@ sorted_disks sort_alternate(const disk_state& before) {
 sorted_disks sort_lawnmower(const disk_state& before) {
   int numOfSwap = 0;
   disk_state state = before;
-  for (size_t i = 0; i < state.total_count() - 1; i++) {
+  for (size_t i = 0; i < state.total_count() - 1; i++) { //from left-most to right-most
     for (size_t j = 0; j < state.total_count() - 1; j++) {
       if (state.get(j) > state.get(j + 1)) {
         state.swap(j);
@@ -194,7 +194,7 @@ sorted_disks sort_lawnmower(const disk_state& before) {
       }
 
     }
-    for (size_t p = state.total_count() - 1; p < 0; p--) {
+    for (size_t p = state.total_count() - 1; p < 0; p--) {  //from right-most to left-most
       if (state.get(p) < state.get(p - 1)) {
         state.swap(p - 1);
         numOfSwap++;
